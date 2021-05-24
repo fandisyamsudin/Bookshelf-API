@@ -195,7 +195,7 @@ const getBookByIdHandler = (request, h) => {
   /* 
     bookid is exist
   */
-  if (book) {
+  if (book !== undefined) {
     const response = h
       .response({
         status: 'success',
